@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 5f8bb733-33ae-4b78-ac28-7f1cf6c90eb9
+      url: 'https://escoladedados.quarto.pub/site'

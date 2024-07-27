@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: "site"
+  page-footer:
+    center: "texto"
+    border: true
+  reader-mode: true
+  site-url: "https://site.com"
+  favicon: data.png
+  search: true
+  navbar:
+    logo: data.png
+    right:
+      - href: index.qmd
+        text: Home
+      - text: Sobre
+        menu: 
+          - text: Nova página
+            href: nova-pagina.qmd
+            
+  sidebar: 
+    logo: data.png
+    search: true
+    contents: 
+      - section: "Uma seção"
+      - text: Home
+        href: index.qmd
+      - href: about.qmd
+        text: Sobre
+      - section: 'Outra seção'
+      - text: Pagina
+        href: nova-pagina.qmd
+        
+
+format:
+  html:
+    lang: pt-BR
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-title: Título

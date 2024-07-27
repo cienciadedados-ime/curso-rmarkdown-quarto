@@ -1,0 +1,16 @@
+---
+title: "texto"
+format: html
+---
+
+# seção 1
+
+Texto.
+
+# seção 2
+
+astg
+
+# seção 3
+
+asdfakjdkfl
