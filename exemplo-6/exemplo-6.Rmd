@@ -1,0 +1,75 @@
+---
+title: "Apresentações usando ioslides"
+author: "Fulano de tal"
+date: 01-01-1900
+output:
+  ioslides_presentation:
+    incremental: true
+    fig_caption: true
+    widescreen: true
+    transition: slower
+    logo: rmarkdown.png
+---
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+```
+
+## Primeiro slide | Isto é um subtítulo
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi scelerisque eu ultrices vitae auctor eu augue ut. 
+
+i. <div class="red">Item vermelho</div>
+i. <div class="blue">Item azul</div>
+i. <div class="red">Item verde</div>
+i. <div class="yellow">Item amarelo</div>
+
+
+## Segundo slide {.smaller}
+
+Amet massa vitae tortor condimentum lacinia quis. Parturient montes nascetur ridiculus mus mauris vitae ultricies. Ac turpis egestas integer eget. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet.
+
+---
+
+Viverra mauris in aliquam sem fringilla ut morbi. Semper eget duis at tellus at urna condimentum mattis. Ipsum consequat nisl vel pretium. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Pharetra pharetra massa massa ultricies mi.
+
+## Terceiro slide | Aqui tem código!
+
+```{r}
+#| echo: true
+#| out.width: 25%
+#| fig.align: center
+#| fig.cap: "Legenda da figura."
+
+## <b>
+library(ggthemes)
+airquality <- filter(airquality, !is.na(Ozone))
+tab <- airquality |>
+  summarise(media = mean(Ozone), dp = sd(Ozone), mediana = median(Ozone))
+write.csv2(tab, "tabela.csv")
+## </b>
+
+ggplot(airquality, aes(Ozone)) +
+  geom_histogram(bins = 8, fill = "blue") +
+  theme_excel()
+```
+
+## Quarto slide 
+
+<div class="centered">
+Olá mundo!
+</div>
+
+<div class="notes">
+Notas que apenas o apresentador vê!
+
+Útil para apresentações on-line.
+
+Tellus molestie nunc non blandit massa enim nec dui nunc. Dolor purus non enim praesent elementum facilisis. Nisl nunc mi ipsum faucibus vitae. Leo urna molestie at elementum eu facilisis sed. Non quam lacus suspendisse faucibus. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Dapibus ultrices in iaculis nunc sed augue lacus. Ullamcorper malesuada proin libero nunc. Sit amet dictum sit amet justo donec. Lacus vestibulum sed arcu non. A diam sollicitudin tempor id eu nisl nunc. Orci dapibus ultrices in iaculis nunc sed. Fermentum dui faucibus in ornare. At risus viverra adipiscing at in. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Interdum varius sit amet mattis. Et ligula ullamcorper malesuada proin libero nunc.
+</div>
+

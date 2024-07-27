@@ -1,0 +1,54 @@
+---
+title: "Um lindo título"
+author: "Fulano de Tal"
+date: 01/01/1900
+lang: pt-br
+execute:
+    echo: true
+format:
+    html:
+        anchor-sections: true
+        link-external-icon: true
+        bibliography: refs.bib
+        toc: true
+        toc-location: body
+        toc-title: Sumário
+        theme: sketchy
+        number-sections: true
+        highlight-style: github
+        code-fold: true
+        include-in-header: in_header.html
+        include-before-body: before_body.html
+        include-after-body: after_body.html
+        mainfont: monospace
+        monofont: math
+        backgroundcolor: "#9596b4"
+        margin-top: 2em
+        code-tools:
+            source: true
+            toggle: false
+            caption: "Nome do menu"
+---
+
+# Nome da seção
+
+**Tincidunt ornare massa eget egestas purus. Mauris vitae ultricies leo integer malesuada nunc. Sed vulputate mi sit amet mauris. Blandit aliquam etiam erat velit. Viverra adipiscing at in tellus integer feugiat. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla.** *Turpis tincidunt id aliquet risus feugiat in ante. Eget velit aliquet sagittis id consectetur purus ut faucibus.* ~~Vestibulum mattis ullamcorper velit sed ullamcorper. Aliquam sem fringilla ut morbi tincidunt augue interdum. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. Vel facilisis volutpat est velit egestas dui id ornare arcu. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Quam id leo in vitae turpis massa sed elementum. In vitae turpis massa sed elementum tempus egestas sed.~~
+
+## Segunda seção
+
+```{r}
+#| echo: fenced
+library(ggplot2)
+library(ggthemes)
+ggplot(mtcars) +
+    geom_histogram(aes(mpg), bins = 7, fill = "blue") +
+    theme_excel_new()
+```
+
+### Terceira seção
+
+Uma citação @wickham2019advanced.
+
+[quarto.org](https://quarto.org/)
+
+![inclusão de figuras](https://i.postimg.cc/5NqDrhGm/hex-rmarkdown.png)

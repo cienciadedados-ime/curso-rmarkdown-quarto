@@ -1,0 +1,107 @@
+---
+title: "Um título"
+date: 20/06/2023
+output: html_document
+---
+
+# Formatação de texto
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+*Texto itálico*
+
+**Texto negrito**
+
+***Texto negrito e itálico***
+
+~~texto tachado~~
+
+***~~Texto tachado, negrito e itálico~~***.
+
+*~~Texto itálico e tachado~~*.
+
+Texto com subscrito: H~2~0.
+
+Texto com sobrescrito: x^2^.
+
+## Citação
+
+Viverra justo nec ultrices dui sapien. Nunc mattis enim ut tellus. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Nec ultrices dui sapien eget mi. Tincidunt lobortis feugiat vivamus at. Lectus nulla at volutpat diam. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Varius duis at consectetur lorem donec massa sapien. In hendrerit gravida rutrum quisque non tellus orci ac. Amet mattis vulputate enim nulla aliquet. Urna porttitor rhoncus dolor purus non enim.
+
+> ### Um citação famosa
+>
+> De cada qual segundo a sua **capacidade**, e a cada qual segundo a sua **necessidade**.
+>
+>> Louis Blanc
+
+### Listas
+
+Dictum fusce ut placerat orci nulla. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Volutpat consequat mauris nunc congue nisi. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Tortor at risus viverra adipiscing. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Lectus sit amet est placerat in egestas erat imperdiet. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eu tincidunt tortor aliquam nulla facilisi. Auctor urna nunc id cursus metus. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Volutpat commodo sed egestas egestas fringilla. Nisl rhoncus mattis rhoncus urna neque viverra justo.
+
+Está na hora de incluir listas:
+
+---
+
+Lista não enumerada:
+
+* Karl Marx
+* Engels
+* Lenin
+
+----
+
+Lista enumerada:
+
+1. O manifesto comunista
+9. A questão da moradia
+2. Estado e revolução
+
+---
+
+Lista aninhada:
+
+* Karl Marx
+    + O manifesto do partido comunista
+    + O capital
+* Engels:
+    a. A questão da moradia
+    d. Condição da classe trabalhadora
+* Lenin:
+    1. Estado e revolução
+    9. As três fontes e as três partes constitutivas do marxismo
+
+#### Código
+
+Sed nisi lacus sed viverra tellus in. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Elementum nisi quis eleifend quam. Urna porttitor rhoncus dolor purus non enim praesent. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. In massa tempor nec feugiat. At volutpat diam ut venenatis tellus. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Ultricies leo integer malesuada nunc vel. At augue eget arcu dictum. Etiam sit amet nisl purus in. Nibh cras pulvinar mattis nunc sed. Tempor orci dapibus ultrices in iaculis nunc sed augue. Orci dapibus ultrices in iaculis nunc sed. Quis auctor elit sed vulputate mi sit amet mauris commodo. Dictum at tempor commodo ullamcorper. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Donec ac odio tempor orci dapibus ultrices in.
+
+Podemos colocar código inline com `print(1 + 2)`.
+
+Podemos incluir também código em bloco:
+
+```r
+library(tidyverse)
+
+summary(rnorm(1000, mean = 10, sd = 2))
+```
+
+## Tabelas 
+
+Turpis egestas maecenas pharetra convallis posuere morbi leo. Donec adipiscing tristique risus nec feugiat. Nibh tellus molestie nunc non blandit. Tellus orci ac auctor augue mauris augue neque. Morbi leo urna molestie at elementum eu facilisis sed. Et egestas quis ipsum suspendisse ultrices gravida. Duis ut diam quam nulla porttitor massa. In metus vulputate eu scelerisque felis imperdiet proin. Est velit egestas dui id. Nunc vel risus commodo viverra. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Ut aliquam purus sit amet luctus venenatis. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Magna etiam tempor orci eu lobortis elementum. Vestibulum mattis ullamcorper velit sed ullamcorper. Duis convallis convallis tellus id interdum velit laoreet id. Mauris augue neque gravida in.
+
+|Autor|livro|
+|:---|---:|
+|Karl Marx|O manifesto do partido comunista|
+|Engels|A questão da moradia|
+|Lenin|Estado e revolução|
+
+## Links e images
+
+Arcu ac tortor dignissim convallis aenean et. Commodo ullamcorper a lacus vestibulum sed arcu non. Donec massa sapien faucibus et. Luctus accumsan tortor posuere ac ut. Tincidunt arcu non sodales neque sodales ut. Nec ultrices dui sapien eget mi proin. Consectetur a erat nam at lectus urna duis convallis convallis. Eget duis at tellus at urna condimentum mattis pellentesque. Sit amet cursus sit amet. Vestibulum morbi blandit cursus risus at ultrices. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Faucibus et molestie ac feugiat sed lectus vestibulum. Consectetur purus ut faucibus pulvinar elementum. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Magna fringilla urna porttitor rhoncus. Turpis egestas pretium aenean pharetra magna ac placerat. Lorem dolor sed viverra ipsum nunc. Id leo in vitae turpis massa sed elementum tempus. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
+
+Link para a página pessoal de Gilberto: [gilbertosassi.netlify.app](https://gilbertosassi.netlify.app){target="_blank"}.
+
+---
+
+**Imagem**
+
+![Imagem linda](https://i.postimg.cc/HWyYX8dH/r.png)

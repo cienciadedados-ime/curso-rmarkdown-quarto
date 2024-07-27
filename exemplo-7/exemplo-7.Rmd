@@ -1,0 +1,74 @@
+---
+title: "Um lindo título"
+author: "Gilberto Pereira Sassi"
+date: 01/01/1900
+lang: pt-br
+fontsize: 10pt
+bibliograpy: refs.bib
+output:
+    beamer_presentation:
+        theme: Bergen
+        colortheme: fly
+        fonttheme: professionalfonts
+        keep_tex: true
+        includes:
+            in_header: header.tex
+            before_body: before_body.tex
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| message: false
+#| echo: false
+
+knitr::opts_chunk$set(
+    echo = TRUE,
+    out.width = "50%",
+    fig.align = "center"
+)
+
+library(gt)
+library(ggthemes)
+library(tidyverse)
+```
+
+## Primeiro slide
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Segundo slide
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Terceiro slide
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Quarto slide
+
+```{r}
+#| fig.cap: "Legenda da figura"
+
+ggplot(mtcars) +
+    geom_histogram(aes(mpg),
+                  fill = "blue", bins = 7) +
+    theme_excel_new()
+```
+
+## Quarto slide
+
+```{r}
+#| echo: false
+
+summarise(
+    mtcars,
+    media = mean(mpg), dp = sd(mpg), mediana = median(mpg),
+    q1 = quantile(mpg, probs = 0.25),
+    q3 = quantile(mpg, probs = 0.75)
+) |>
+gt()|>
+    tab_header(title = "Medidas de resumo.") |>
+    tab_source_note(source_note = md("**Fonte**: Elaboração própria.")) |>
+    fmt_number(everything(), decimals = 2, sep_mark = ".", dec_mark = ",")
+```

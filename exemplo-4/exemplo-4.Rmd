@@ -1,0 +1,45 @@
+---
+title: "Um documento html"
+author: "Fulano de Tal"
+date: 01/01/1900
+output: 
+    html_document:
+        toc: true
+        toc_depth: 2
+        toc_float: true
+        code_folding: hide
+        number_sections: true
+        fig_caption: true
+        theme: bootstrap
+        highlight: arrow
+        includes:
+            in_header: header.html
+            before_body: before_body.html
+            after_body: after_body.html
+---
+
+# Primeira seção {.tabset .tabset-pills} 
+
+Parágrafo 1 da primeira seção.
+
+```{r}
+library(tidyverse)
+summary(iris)
+```
+
+## Subseção 1
+
+Parágrafo 1 da primeira seção.
+
+## Subseção 2
+
+Parágrafo 1 da segunda seção.
+
+# Segunda seção 
+
+```{r}
+#| echo: false
+#| fig.cap: "legenda da figura"
+ggplot(iris) +
+    geom_histogram(aes(x = Sepal.Length), bins = 7)
+```

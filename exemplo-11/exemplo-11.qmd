@@ -1,0 +1,60 @@
+---
+title: "Documento pdf"
+date: 01/01/1900
+author: "Gilberto Pereira Sassi"
+fontsize: 12pt
+lang: pt-br
+margin-left: 3cm
+margin-right: 2cm
+margin-top: 3cm
+margin-bottom: 2cm
+format:
+  pdf:
+    toc: true
+    toc_depth: 3
+    toc-title: Sumário
+    number_sections: true
+    highlight-style: arrow
+    keep_tex: true
+    bibliography: refs.bib
+    biblio-title: "Nome da bibliografia"
+    cite-method: natbib
+    include-in-header: preambulo-11.tex
+    include-before-body: prefixo-11.tex
+    include-after-body: sufixo-11.tex
+    lot: true
+    lof: true
+pdf-engine: pdflatex
+---
+
+# Primeira seção
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut eu sem integer. Metus dictum at tempor commodo ullamcorper a lacus. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Aenean et tortor at risus viverra adipiscing. Cras sed felis eget velit aliquet sagittis id consectetur. Enim lobortis scelerisque fermentum dui faucibus in. Id ornare arcu odio ut sem nulla pharetra. Dui id ornare arcu odio ut. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Rhoncus urna neque viverra justo nec. Proin sagittis nisl rhoncus mattis rhoncus. Diam maecenas ultricies mi eget mauris pharetra et. Tellus mauris a diam maecenas sed enim ut. Et malesuada fames ac turpis egestas sed.
+
+```{r}
+library(tidyverse)
+print(1 + 1)
+print("Gilberto Pereira Sassi")
+```
+
+## Primeira subseção
+
+Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Elementum nibh tellus molestie nunc non blandit. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Molestie ac feugiat sed lectus vestibulum. Sed felis eget velit aliquet sagittis id. Massa massa ultricies mi quis hendrerit. Volutpat diam ut venenatis tellus. Feugiat in ante metus dictum at tempor commodo. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquam purus sit amet luctus venenatis. Et malesuada fames ac turpis egestas. Cras tincidunt lobortis feugiat vivamus at augue. Pellentesque id nibh tortor id aliquet lectus proin nibh. Sagittis eu volutpat odio facilisis mauris sit amet massa.
+
+```{r}
+summary(mtcars)
+```
+
+### Primeira subsubseção
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Diam in arcu cursus euismod quis viverra nibh cras. Egestas pretium aenean pharetra magna ac placerat vestibulum. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Donec ac odio tempor orci dapibus ultrices. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Parturient montes nascetur ridiculus mus mauris. Porta lorem mollis aliquam ut porttitor leo a diam.
+
+Uma citação @wickham2023r.
+
+```{r}
+#| out.width: 50%
+#| fig.align: center
+#| fig.cap: "Legenda da figura."
+ggplot(mtcars) +
+    geom_bar(aes(cyl))
+```
